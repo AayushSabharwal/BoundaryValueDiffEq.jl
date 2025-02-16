@@ -27,14 +27,6 @@ Tricks = "410a4b4d-49e4-4fbc-ab6d-cb71b17b3775"
 TruncatedStacktraces = "781d530d-4396-4725-bb49-402e4bee1e77"
 UnPack = "3a884ed6-31ef-47d7-9d2a-63182c4928ed"
 
-[weakdeps]
-ODEInterface = "54ca160b-1b9f-5127-a996-1867f4bc2a2c"
-OrdinaryDiffEq = "1dea7af3-3e70-54e6-95c3-0bf5283fa5ed"
-
-[extensions]
-BoundaryValueDiffEqODEInterfaceExt = "ODEInterface"
-BoundaryValueDiffEqOrdinaryDiffEqExt = "OrdinaryDiffEq"
-
 [compat]
 ADTypes = "0.2"
 Adapt = "3"
@@ -46,7 +38,7 @@ DiffEqBase = "6.138"
 FastAlmostBandedMatrices = "0.1"
 ForwardDiff = "0.10"
 LinearAlgebra = "1.9"
-LinearSolve = "2.20"
+LinearSolve = "2.20, 3.2"
 NonlinearSolve = "2.6.1"
 ODEInterface = "0.5"
 OrdinaryDiffEq = "6"
@@ -64,6 +56,10 @@ TruncatedStacktraces = "1"
 UnPack = "1"
 julia = "1.9"
 
+[extensions]
+BoundaryValueDiffEqODEInterfaceExt = "ODEInterface"
+BoundaryValueDiffEqOrdinaryDiffEqExt = "OrdinaryDiffEq"
+
 [extras]
 Aqua = "4c88cf16-eb10-579e-8560-4a9242c79595"
 DiffEqDevTools = "f3b72e0c-5b89-59e1-b016-84e28bfd966d"
@@ -77,3 +73,7 @@ Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
 [targets]
 test = ["StaticArrays", "Random", "DiffEqDevTools", "OrdinaryDiffEq", "Test", "SafeTestsets", "ODEInterface", "Aqua", "LinearSolve"]
+
+[weakdeps]
+ODEInterface = "54ca160b-1b9f-5127-a996-1867f4bc2a2c"
+OrdinaryDiffEq = "1dea7af3-3e70-54e6-95c3-0bf5283fa5ed"
